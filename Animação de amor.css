@@ -1,0 +1,64 @@
+/* Define o comportamento do box model para todos os elementos e remove margens e preenchimentos */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Estiliza o corpo e o HTML para ocupar 100% da altura da tela, centralizando o conteúdo no centro */
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  background-color: #e276a8; 
+  font-size: 62.5%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* Media query reservada para ajustar estilos em telas pequenas*/
+@media screen and (max-width: 520px) {
+}
+/* Container principal da animação */
+.container {
+  width: 50rem;
+  height: 20rem;
+  position: relative;
+}
+/* Container do SVG que contém as letras e linhas animadas */
+.svg-container {
+  z-index: 2;
+  position: absolute;
+}
+/* Container onde os efeitos mo.js são desenhados */
+.mo-container {
+  width: 100%;
+  height: 100%;
+}
+/* Estilo das linhas verticais à esquerda e à direita */
+.line {
+  fill: none;
+  stroke: #d33838;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+/* Estilo padrão das letras (LOVE YOU) */
+.lttr {
+  fill: #ffffff;
+}
+/* Estilo do botão "sound" que liga/desliga o som */
+.sound {
+  position: fixed;
+  color: #763c8c;
+  font-size: 1.6rem;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: underline;
+  cursor: default;
+}
+/* Estilo quando o som está desligado */
+.sound--off {
+  text-decoration: line-through;
+}

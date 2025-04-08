@@ -20,8 +20,11 @@ Esse projeto foi criado como uma forma criativa de praticar animações SVG com 
 
 ## 📁 Estrutura do Projeto
 📁 animacao-de-amor/
+
 ├── Animação de amor.html   # Página principal da animação
+
 ├── Animação de amor.css    # Estilos visuais e responsividade
+
 ├── Animação de amor.js     # Lógica da animação com mo.js
 
 ## projeto inspirado no #wizard B - said
